@@ -1,0 +1,9 @@
+%form
+  %label
+    Zip Code
+    %input(type='text' name='zip'){value: params[:zip]}
+  %input(type='submit' value='Search')
+
+%ul
+  = list_of congressmen do |congressman|
+    = congressman.name
